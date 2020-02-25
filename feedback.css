@@ -52,7 +52,7 @@ body {
 }
 
 .star {
-    background-image: url(../stars.png);
+    background-image: url(./stars.png);
     width: 15px;
     height: 15px;
     cursor: pointer;
