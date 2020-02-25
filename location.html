@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/0233149bfc.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="mainSite.css">
+    <link rel="stylesheet" type="text/css" href="navigation.css">
+    <link rel="stylesheet" type="text/css" href="location.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <title>Lokalizacja</title>
+</head>
+<body>
+    <nav class="page-nav">
+        <h1 class="logoMobile"><span class="logo">ITM</span>asters</h1>
+        <button class="hamburger">
+            <span class="hamburger__box">
+            <span class="hamburger__inner"></span>
+            </span>
+        </button>
+        <div class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="/about.html">Idea</a></li>
+                <li class="navigation__item"><a href="/schedule.html">Kalendarz</a></li>
+                <li class="navigation__item"><a href="/register.html">Rejestracja</a></li>
+                <li class="navigation__item"><a href="/location.html">Lokalizacja</a></li>
+                <li class="navigation__item"><a href="/feedback.html">Feedback</a></li>
+            </ul>
+            <h2 class="Sm">Social Media</h2>
+            <ul class="SocialMediaList">
+              <li class="socialMedia"><i class="fab fa-facebook-square"></i> Facebook</li>
+              <li class="socialMedia"><i class="fab fa-instagram"></i> Instagram</li>
+            </ul>
+        </div>
+        <div class="container">
+            <a href="/index.html"><span class="logo">ITM</span>asters</a>
+            <a href="/about.html">Idea</a>
+            <a href="/schedule.html">Kalendarz</a>
+            <a href="./register.html">Rejestracja</a>
+            <a href="/location.html" class="active">Lokalizacja</a>
+            <a href="/feedback.html">Feedback</a>
+        </div>
+    </nav>
+    <div class="rooms">
+        <svg viewBox="0 0 300 200" width="100%" height="350">
+            <!-- Room A -->
+            <g id="room-a" class="room">
+                <rect fill="#1d1d1d" x="0" y="0" width="100" height="100"></rect>
+                <text x="25" y="55" font-weight="bold" fill="white" font-size="20">POKÓJ A</text>
+            </g>
+            <!-- Room B -->
+            <g id="room-b" class="room">
+                <rect fill="#1d1d1d" x="200" y="0" width="100" height="100"></rect>
+                <text x="225" y="55" font-weight="bold" fill="white" font-size="20">POKÓJ B</text>
+            </g>
+            <!-- Room C -->
+            <g id="room-c" class="room">
+                <rect fill="#1d1d1d" x="190" y="120" width="110" height="80"></rect>
+                <text x="220" y="165" font-weight="bold" fill="white" font-size="132">POKÓJ C</text>
+            </g>
+            <!-- Room D -->
+            <g id="room-d" class="room">
+                <rect fill="#1d1d1d" x="0" y="110" width="110" height="90"></rect>
+                <text x="25" y="165" font-weight="bold" fill="white" font-size="20">POKÓJ D</text>
+            </g>
+
+            <polyline fill="none" stroke="#fff" points="130 190 ,140 200,120 200,120 160,110 160,110 200,0 200,0 110,110 110,110 140,120 140,120,100 0,100 0,0 100,0 100,80 130,80 130,70 110,70 110,40 190,40 190,70 170,70 170,80 200,80 200,0 300,0 300,100 180,100 180,150,190 150, 190 120, 300 120, 300 200, 190 200, 190 170, 180 170, 180 200, 160 200, 170 190 "></polyline>
+            <text x="150" y="58" font-size="12" fill="white" style="text-anchor: middle">Rejestracja</text>
+        </svg>
+        <div id="instruction">
+            <p>Kliknij na pokój, żeby zobaczyć więcej informacji.</p>
+        </div>
+        <div id="room-a-info" class="description" style="display: none">
+            <h2>Pokój A</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt voluptates odio itaque. Error quis, laboriosam 
+                repudiandae corrupti officia iusto, animi corporis commodi ab ex esse! Iste nam officiis possimus atque.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt voluptates odio itaque. Error quis, laboriosam 
+                repudiandae corrupti officia iusto, animi corporis commodi ab ex esse! Iste nam officiis possimus atque.
+            </p>
+        </div>
+        <div id="room-b-info" class="description" style="display: none">
+            <h2>Pokój B</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt voluptates odio itaque. Error quis, laboriosam 
+                repudiandae corrupti officia iusto, animi corporis commodi ab ex esse! Iste nam officiis possimus atque.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt voluptates odio itaque. Error quis, laboriosam 
+                repudiandae corrupti officia iusto, animi corporis commodi ab ex esse! Iste nam officiis possimus atque.
+            </p>
+        </div>
+        <div id="room-c-info" class="description" style="display: none">
+            <h2>Pokój C</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt voluptates odio itaque. Error quis, laboriosam 
+                repudiandae corrupti officia iusto, animi corporis commodi ab ex esse! Iste nam officiis possimus atque.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt voluptates odio itaque. Error quis, laboriosam 
+                repudiandae corrupti officia iusto, animi corporis commodi ab ex esse! Iste nam officiis possimus atque.
+            </p>
+        </div>
+        <div id="room-d-info" class="description" style="display: none">
+            <h2>Pokój D</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt voluptates odio itaque. Error quis, laboriosam 
+                repudiandae corrupti officia iusto, animi corporis commodi ab ex esse! Iste nam officiis possimus atque.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt voluptates odio itaque. Error quis, laboriosam 
+                repudiandae corrupti officia iusto, animi corporis commodi ab ex esse! Iste nam officiis possimus atque.
+            </p>
+        </div>
+    </div>
+    <script src="./room-info.js" type="module"></script>
+    <script src="./navigation.js" type="module"></script>
+</body>
+
+</html>
