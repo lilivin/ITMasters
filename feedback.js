@@ -1,6 +1,4 @@
-﻿import { StarRatingView } from "../StarRatingView.js";
-
-const section = document.getElementById("feedback");
+﻿const section = document.getElementById("feedback");
 const form = section.querySelector("form");
 const sent = document.getElementById("feedback-sent");
 

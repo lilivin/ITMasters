@@ -1,4 +1,4 @@
-﻿export class StarRatingView {
+﻿class StarRatingView {
 
     constructor(element) {
         this.element = element;
