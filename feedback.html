@@ -48,19 +48,43 @@
                 <form class="formFeedback" method="post" action="/send-feedback">
                     <div class="field feedback-question">
                         <label>Jak oceniasz przekazywane treści?</label>
-                        <input name="question" type="range" min="1" max="5"/>
+                        <select required="required" class="feedbackSelect">
+                            <option value="" selected disabled hidden>Wybierz</option>
+                            <option value="zle">Źle</option>
+                            <option value="wystarczajaco">Wystarczająco</option>
+                            <option value="dobrze">Dobrze</option>
+                            <option value="bardzoDobrze">Bardzo Dobrze</option>
+                        </select>
                     </div>
                     <div class="field feedback-question">
                         <label>Jak oceniasz przygotowanie prowadzącego?</label>
-                        <input name="question" type="range" min="1" max="5"/>
+                        <select required="required" class="feedbackSelect">
+                            <option value="" selected disabled hidden>Wybierz</option>
+                            <option value="zle">Źle</option>
+                            <option value="wystarczajaco">Wystarczająco</option>
+                            <option value="dobrze">Dobrze</option>
+                            <option value="bardzoDobrze">Bardzo Dobrze</option>
+                        </select>
                     </div>
                     <div class="field feedback-question">
                         <label>Jak oceniasz obsługę klienta?</label>
-                        <input name="question" type="range" min="1" max="5"/>
+                        <select required="required" class="feedbackSelect">
+                            <option value="" selected disabled hidden>Wybierz</option>
+                            <option value="zle">Źle</option>
+                            <option value="wystarczajaco">Wystarczająco</option>
+                            <option value="dobrze">Dobrze</option>
+                            <option value="bardzoDobrze">Bardzo Dobrze</option>
+                        </select>
                     </div>
                     <div class="field feedback-question">
                         <label>Jak oceniasz rejestracje internetową?</label>
-                        <input name="question" type="range" min="1" max="5"/>
+                        <select required="required" class="feedbackSelect">
+                            <option value="" selected disabled hidden>Wybierz</option>
+                            <option value="zle">Źle</option>
+                            <option value="wystarczajaco">Wystarczająco</option>
+                            <option value="dobrze">Dobrze</option>
+                            <option value="bardzoDobrze">Bardzo Dobrze</option>
+                        </select>
                     </div>
                     <div class="field comments">
                         <label>Dodatkowe komentarze</label>
