@@ -16,8 +16,3 @@ form.addEventListener("submit", formSubmit, false);
 
 form.addEventListener("animationend", animation, false);
 
-const questions = form.querySelectorAll(".feedback-question");
-for (let i = 0; i < questions.length; i++) {
-    new StarRatingView(questions[i]);
-}
-
