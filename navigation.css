@@ -21,7 +21,7 @@ nav.page-nav .container a {
     text-align: center;
     color: #c3c3c3;
     text-shadow: 0 1px 0 #000;
-    margin: 0 .5vw;
+    margin: 0;
     transition: .5s ease-in-out;
 }
 
@@ -64,7 +64,7 @@ nav.page-nav .active:hover {
 }
 
 .hamburger {
-    position: absolute;
+    position: fixed;
     top: 1vh;
     z-index: 1000;
     padding: 10px;
@@ -84,7 +84,7 @@ nav.page-nav .active:hover {
   }
   
   .hamburger--active {
-    transform: translateX(250px);
+    transform: translateX(83vw);
   }
   
   .hamburger__box {
@@ -142,11 +142,11 @@ nav.page-nav .active:hover {
 
   .navigation {
     height: 100vh;
-    width: 250px;
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    transform: translateX(-250px);
+    transform: translateX(-100vw);
     z-index: 100;
     color: white;
   }
@@ -160,12 +160,19 @@ nav.page-nav .active:hover {
   }
   
   .navigation__list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
     list-style: none;
+    min-height: 100vh;
   }
-  
+
   .navigation__item {
     height: 8vh;
     line-height: 8vh;
+    margin: 0 auto;
+    width: 200px;
     border-top: 1px solid #dcdcdc;
   }
 
@@ -179,22 +186,7 @@ nav.page-nav .active:hover {
     display: block;
     font-size: 20px;
     text-align: center;
-  }
-  .Sm {
-    margin-top: 5vh;
-    margin-left: 60px;
-  }
-
-  .SocialMediaList {
-    margin-top: 5vh;
-  }
-
-  .socialMedia {
-    font-size: 20px;
-    list-style: none;
-    margin-left: 60px;
-    margin-top: 2vh;
-  }
+}
 
 @media only screen and (max-width: 1050px) {
     nav.page-nav .container a  {

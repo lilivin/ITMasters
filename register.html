@@ -22,16 +22,12 @@
             </button>
             <div class="navigation">
                 <ul class="navigation__list">
+                    <li class="navigation__item"><a href="./index.html"><span class="logo">ITM</span>asters</a></li>
                     <li class="navigation__item"><a href="./about.html">Idea</a></li>
                     <li class="navigation__item"><a href="./schedule.html">Kalendarz</a></li>
                     <li class="navigation__item"><a href="./register.html">Rejestracja</a></li>
                     <li class="navigation__item"><a href="./location.html">Lokalizacja</a></li>
                     <li class="navigation__item"><a href="./feedback.html">Feedback</a></li>
-                </ul>
-                <h2 class="Sm">Social Media</h2>
-                <ul class="SocialMediaList">
-                  <li class="socialMedia"><i class="fab fa-facebook-square"></i> Facebook</li>
-                  <li class="socialMedia"><i class="fab fa-instagram"></i> Instagram</li>
                 </ul>
             </div>
             <div class="container">
@@ -50,27 +46,28 @@
                 <form id="registration-form">
                     <div class="field">
                         <label for="first-name">Imie:</label>
-                        <input type="text" id="first-name" name="FirstName" required="required" autofocus="autofocus"/>
+                        <input type="text" id="first-name" name="FirstName" required="required" placeholder="Wpisz imię..." autofocus="autofocus"/>
                     </div>
                     <div class="field">
                         <label for="last-name">Nazwisko</label>
-                        <input type="text" id="last-name" name="LastName" required="required"/>
+                        <input type="text" id="last-name" name="LastName" required="required" placeholder="Wpisz nazwisko..."/>
                     </div>
                     <div class="field">
                         <label for="email-address">Email:</label>
-                        <input type="email" id="email-address" name="EmailAddress" required="required"/>
+                        <input type="email" id="email-address" name="EmailAddress" required="required" placeholder="Wpisz email..."/>
                     </div>
                     <div class="field">
                         <label for="password">Hasło:</label>
-                        <input type="password" id="password" name="Password" required="required" pattern="[a-zA-Z0-9]{5,}" title="At least 5 letters and numbers"/>
+                        <input type="password" id="password" name="Password" required="required" pattern="[a-zA-Z0-9]{5,}" title="At least 5 letters and numbers" placeholder="Wpisz hasło..."/>
                     </div>
                     <div class="field">
                         <label for="confirm-password">Powtórz hasło:</label>
-                        <input type="password" id="confirm-password" name="ConfirmPassword" required="required"/>
+                        <input type="password" id="confirm-password" name="ConfirmPassword" required="required" placeholder="Powtórz hasło..."/>
                     </div>
                     <div class="field">
                         <label for="website">Wykład:</label>
                         <select id="lectures">
+                            <option value="" selected disabled hidden>Wybierz wykład</option>
                         </select>
                     </div>
                     <div>

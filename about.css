@@ -53,6 +53,10 @@
     font-size: 20px;
 }
 
+.infos__header {
+    display: none;
+}
+
 @media only screen and (max-width: 1280px) {
     .articleAbout {
         column-count: 2;
@@ -81,5 +85,33 @@
 
     .adres h1 {
         font-size: 28px;
+    }
+
+    .infos__header {
+        display: block;
+        font-size: 32px;
+        padding: 10px 10px 40px;
+    }
+
+    .socialMediaLinks {
+        margin: 0 auto;
+        border-bottom: 2px solid white;
+        width: 300px;
+        padding-bottom: 20px;
+    }
+
+    .adres {
+        margin: 0 auto;
+        border-bottom: 2px solid white;
+        width: 300px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .kontakt {
+        margin: 0 auto;
+        width: 300px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 }

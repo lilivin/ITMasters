@@ -37,7 +37,7 @@ body {
 }
 
 #lectures {
-    height: 4vh;
+    height: 35px;
     width: 50%;
 }
 
@@ -109,7 +109,8 @@ body {
         width: 100%;
     }
 
-    .registerBtn {
+    .btnRegister {
         width: 100%;
+        margin-bottom: 20px;
     }
 }
