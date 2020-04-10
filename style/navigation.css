@@ -1,0 +1,223 @@
+nav.page-nav {
+    background-color: #1d1d1d;
+    line-height: 8vh;
+    font-size: 1.4rem;
+    margin-top: 2vh;
+}
+
+nav.page-nav .container {
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+}
+
+nav.page-nav .container a {
+    display: block;
+    border-radius: 25px 25px 25px 25px;
+    min-width: 5vh;
+    padding: 0 4vh;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #c3c3c3;
+    text-shadow: 0 1px 0 #000;
+    margin: 0;
+    transition: .5s ease-in-out;
+}
+
+nav.page-nav .container a:nth-of-type(1) {
+    color: white;
+    font-size: 30px;
+    border-radius: 0;
+    margin-right: 2%;
+    border-right: 1px solid white;
+}
+
+nav.page-nav a:hover {
+    color: white;
+    background-color: black;
+}
+
+nav.page-nav a:nth-of-type(1):hover {
+    background-color: #1d1d1d;
+}
+
+nav.page-nav .active {
+    color: #1d1d1d;
+    background: -ms-linear-gradient(rgb(101, 164, 206), #525cb8);
+    background: rgb(228,255,0);
+    background: linear-gradient(90deg, rgba(228,255,0,0.7035189075630253) 5%, rgba(244,255,0,1) 52%, rgba(236,255,0,0.6979166666666667) 95%);
+}
+
+nav.page-nav .active:hover {
+    color: black; 
+}
+
+.logo {
+    color: yellow;
+    font-weight: bold;
+}
+
+.logoMobile {
+    text-align: center;
+    color: white;
+}
+
+.hamburger {
+    position: fixed;
+    top: 1vh;
+    z-index: 1000;
+    padding: 10px;
+    display: inline-block;
+    cursor: pointer;
+    background: #1d1d1d;
+    border-radius: 0 0 20px 0;
+    border: 0;
+    margin: 0;
+  }
+  
+  .hamburger, .navigation {
+    transition: transform .3s .1s ease-in-out;
+  }
+  
+  .hamburger, .navigation--active {
+    transition: transform .3s .1s ease-in-out;
+  }
+  
+  .hamburger--active {
+    transform: translateX(83vw);
+  }
+  
+  .hamburger__box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .hamburger__inner {
+    width: 100%;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color .3s .1s ease-in-out;
+  }
+  
+  .hamburger__inner::before,
+  .hamburger__inner::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    transition: transform .2s .2s ease-in-out;
+  }
+  
+  .hamburger__inner::before {
+    top: -10px;
+  }
+  
+  .hamburger__inner::after {
+    top: 10px;
+  }
+  
+  .hamburger--active .hamburger__inner {
+    background-color: transparent;
+  }
+  
+  .hamburger--active .hamburger__inner::before {
+    transform: translateY(10px) rotate(45deg);
+  }
+  
+  .hamburger--active .hamburger__inner::after {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+
+  div.navigation {
+    background-color: #1d1d1d;
+  }
+
+  .navigation {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100vw);
+    z-index: 100;
+    color: white;
+  }
+  
+  .navigation--active {
+    transform: translateX(0px);
+  }
+
+  div.container a.active {
+    color: #1d1d1d;
+  }
+  
+  .navigation__list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    list-style: none;
+    min-height: 100vh;
+  }
+
+  .navigation__item {
+    height: 8vh;
+    line-height: 8vh;
+    margin: 0 auto;
+    width: 200px;
+    border-top: 1px solid #dcdcdc;
+  }
+
+  .navigation__item:nth-of-type(1) {
+    border-top: none;
+  }
+  
+  .navigation__item a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1050px) {
+    nav.page-nav .container a  {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    nav.page-nav .container a  {
+        padding: 0 2vh;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    nav.page-nav .container a  {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 769px) {
+    button.hamburger {
+        display: none;
+    }
+
+    div.navigation {
+        display: none;
+    }
+
+    .logoMobile {
+        display: none;
+    }
+}

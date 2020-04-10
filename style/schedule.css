@@ -1,0 +1,153 @@
+#list {
+    width: 80%;
+    margin: 5vh auto;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#list li {
+    width: 40%;
+    border-bottom: 1px solid white;
+    padding: 1vh 0;
+    color: white;
+}
+
+#list li p {
+    padding: 1vh 0;
+}
+
+.draw-border {
+    box-shadow: inset 0 0 0 2px #fff;
+    color: #fff;
+    -webkit-transition: color 0.25s 0.0833333333s;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+  }
+  .draw-border::before, .draw-border::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .draw-border::before {
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+  }
+  .draw-border::after {
+    border-top-width: 2px;
+    border-right-width: 2px;
+  }
+  .draw-border:hover {
+    color: #ffe695;
+  }
+  .draw-border:hover::before, .draw-border:hover::after {
+    border-color: #ffdc6b;
+    -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+  }
+  .draw-border:hover::before {
+    -webkit-transition-delay: 0s, 0s, 0.25s;
+            transition-delay: 0s, 0s, 0.25s;
+  }
+  .draw-border:hover::after {
+    -webkit-transition-delay: 0s, 0.25s, 0s;
+            transition-delay: 0s, 0.25s, 0s;
+  }
+  
+  .btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    min-width: 20vw;
+    min-height: 6vh;
+    font-size: 16px;
+    padding: 1em 2em;
+    letter-spacing: 0.05rem;
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  
+@media only screen and (max-width: 1480px) {
+  .header h2 {
+    font-size: 20px;
+  }
+
+  .header p {
+    font-size: 16px;
+  }
+
+  .listItem p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .header h2 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .header h2 {
+    font-size: 20px;
+  }
+
+  .header {
+    display: block;
+    text-align: center;
+  }
+
+  #list li {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #list {
+    display: block;
+  }
+
+  .header {
+    display: flex;
+  }
+
+  #list li {
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .header {
+    display: block;
+    text-align: center;
+  }
+
+  #list li {
+    text-align: center;
+  }
+
+}
+
+@media only screen and (max-width: 440px) {
+  .btn {
+    font-size: 12px;
+  }
+}

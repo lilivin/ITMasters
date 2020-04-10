@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1d1d1d;
+}
+
+footer {
+    color: white;
+    text-align: center;
+}
+
+.companies {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    margin-top: 1vh;
+}
+
+.companies p {
+    padding: 0 1vw;
+    margin-top: 2vh;
+    border-right: 1px solid white;
+}
+
+.companies p:nth-last-of-type(1) {
+    border-right: none;
+}
+
+@media only screen and (max-width: 360px) {
+    .companies p {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }    
+}

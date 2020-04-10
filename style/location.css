@@ -1,0 +1,44 @@
+.rooms {
+    margin-top: 7vh;
+}
+
+.room {
+    cursor: pointer;
+}
+
+.textColor {
+    color: white;
+}
+
+#instruction, .description {
+    margin-top: 5vh;
+    text-align: center;
+    color: white;
+}
+
+div.description p {
+    margin: 5vh auto;
+    width: 50%;
+    line-height: 4vh;
+}
+
+text {
+    color: white !important;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+    #instruction, .description {
+        margin-top: 1vh;
+    }
+
+    div.description p {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 20px;
+    }
+
+    .rooms {
+        margin: 4vh 5vw;
+    }
+}
