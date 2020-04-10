@@ -1,6 +1,6 @@
 section.sectionConfa {
     height: 38vh;
-    background-image: url("../images/bcgslider.jpg");
+    background-image: url("./../images/bcgslider.jpg");
     background-position: center;
     border-bottom: 4px solid #1d1d1d;
 }
