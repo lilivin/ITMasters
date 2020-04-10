@@ -1,6 +1,6 @@
 section.sectionConfa {
     height: 38vh;
-    background-image: url("/images/bcgslider.jpg");
+    background-image: url("/Images/bcgslider.jpg");
     background-position: center;
     border-bottom: 4px solid #1d1d1d;
 }
@@ -19,7 +19,7 @@ section.sectionConfa p, section.sectionSchedule p {
 section.sectionSchedule {
     height: 38vh;
     margin-top: 2vh;
-    background-image: url("/images/unnamed.jpg");
+    background-image: url("/Images/unnamed.jpg");
     background-position: center;
     border-bottom: 4px solid #1d1d1d;
 }
